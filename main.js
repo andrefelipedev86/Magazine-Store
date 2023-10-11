@@ -1,3 +1,6 @@
+import { initializeCart } from "./src/menuCart"
+
+
 const catalog = [
   {
     id: 1,
@@ -80,5 +83,7 @@ for(const productCatalog of catalog) {
   document.getElementById('product-container').innerHTML += productCard
 }
 
+
+initializeCart()
 
 
