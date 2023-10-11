@@ -1,19 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Magazine Store</title>
 </head>
+
 <body>
-  <main>
-    <section id="product-container">
-     
-     
+  <section id="cart" class="fixed top-0 right-0 bg-indigo-950 h-screen w-[360px] text-slate-200">
+    <div id="cart-header" class="flex justify-between m-4">
+      <p>Meu carrinho</p>
+      <button id="close-cart"><i class="fa-solid fa-circle-xmark"></i></button>
+    </div>
+    <section id="cart-products">
+      <p>Camisa Larga com bolsos</p>
+      <p>Casaco reto com lã</p>
+      <p>Jaqueta com feito camurça</p>
     </section>
-  </main> 
+    <p id="totaal-price">$200</p>
+    <button class="bg-slate-200 text-slate-900 p-1">Finalizar compra</button>
+  </section>
+  <header class="flex bg-indigo-950 p-2 justify-between">
+    <img src="./assets/logo/shopify.svg" class="h-16" alt="logo da MagazineStore">
+    <div class="text-slate-200 flex gap-2 items-end mx-2">
+      <button><i class="fa-solid fa-cart-shopping"></i></button>
+      <button><i class="fa-solid fa-user"></i></button>
+    </div>
+
+  </header>
+  <main>
+    <section id="product-container" class="flex flex-wrap">
+
+    </section>
+  </main>
 
   <script src="./main.js"></script>
 </body>
+
 </html>
