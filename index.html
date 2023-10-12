@@ -12,13 +12,23 @@
 </head>
 
 <body class="bg-stone-200 flex flex-col ">
-  <section id="cart" class="fixed top-0 right-[-360px] bg-slate-950 h-screen w-[360px] text-slate-200 z-50">
+  <section id="cart"
+    class="fixed top-0 right-[-360px] bg-slate-950 h-screen w-[360px] text-slate-200 z-50 duration-200 border-l border-slate-200 p-5 flex flex-col justify-between">
     <div id="cart-header" class="flex justify-between m-4">
       <p>Meu carrinho</p>
       <button id="close-cart"><i class="fa-solid fa-circle-xmark"></i></button>
     </div>
     <section id="cart-products">
-      <p>Camisa Larga com bolsos</p>
+      <article class="flex bg-slate-100 rounded-lg p-1 relative">
+        <button class="absolute top-0 right-2" id="close-cart"><i class="fa-solid fa-circle-xmark text-slate-500 hover:text-slate-800"></i></button>
+        <img src="./assets/img/product-1.jpg" alt=" carrinho: camisa larga com bolsos" class="h-24">
+        <div class="py-2">
+          <p class="text-slate-900 text-sm">Camisa larga com bolsos</p>
+          <p class="text-slate-400 text-xs">Tamanho: M</p>
+          <p class="text-green-700">$ 70</p>
+        </div>
+
+      </article>
       <p>Casaco reto com lã</p>
       <p>Jaqueta com feito camurça</p>
     </section>
