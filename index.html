@@ -11,8 +11,8 @@
   <title>Magazine Store</title>
 </head>
 
-<body>
-  <section id="cart" class="fixed top-0 right-[0px] bg-indigo-950 h-screen w-[360px] text-slate-200">
+<body class="bg-stone-200 flex flex-col ">
+  <section id="cart" class="fixed top-0 right-[-360px] bg-slate-950 h-screen w-[360px] text-slate-200 z-50">
     <div id="cart-header" class="flex justify-between m-4">
       <p>Meu carrinho</p>
       <button id="close-cart"><i class="fa-solid fa-circle-xmark"></i></button>
@@ -25,16 +25,16 @@
     <p id="total-price">$200</p>
     <button class="bg-slate-200 text-slate-900 p-1">Finalizar compra</button>
   </section>
-  <header class="flex bg-indigo-950 p-2 justify-between">
-    <img src="./assets/logo/shopify.svg" class="h-16" alt="logo da MagazineStore">
+  <header class="flex text-xl bg-slate-950 shadow-slate-400 shadow-xl px-8 py-4 justify-between sticky top-0">
+    <img src="./assets/img/shopify (1).svg" class="h-16" alt="logo da MagazineStore">
     <div class="text-slate-200 flex gap-2 items-end mx-2">
-      <button id="open-cart"><i class="fa-solid fa-cart-shopping"></i></button>
-      <button><i class="fa-solid fa-user"></i></button>
+      <button id="open-cart" class="mx-2"><i class="fa-solid fa-cart-shopping"></i></button>
+      <button class="mr-2"><i class="fa-solid fa-user"></i></button>
     </div>
 
   </header>
   <main>
-    <section id="product-container" class="flex flex-wrap">
+    <section id="product-container" class="flex flex-wrap p-10 justify-center gap-10">
 
     </section>
   </main>
