@@ -18,24 +18,13 @@
       <p>Meu carrinho</p>
       <button id="close-cart"><i class="fa-solid fa-circle-xmark"></i></button>
     </div>
-    <section id="cart-products">
-      <article class="flex bg-slate-100 rounded-lg p-1 relative">
-        <button class="absolute top-0 right-2" id="close-cart"><i class="fa-solid fa-circle-xmark text-slate-500 hover:text-slate-800"></i></button>
-        <img src="./assets/img/product-1.jpg" alt=" carrinho: camisa larga com bolsos" class="h-24">
-        <div class="py-2">
-          <p class="text-slate-900 text-sm">Camisa larga com bolsos</p>
-          <p class="text-slate-400 text-xs">Tamanho: M</p>
-          <p class="text-green-700">$ 70</p>
-        </div>
-
-      </article>
-      <p>Casaco reto com lã</p>
-      <p>Jaqueta com feito camurça</p>
+    <section id="cart-products" class="h-3/5 overflow-y-auto flex flex-col gap-2">
+      
     </section>
     <p id="total-price">$200</p>
     <button class="bg-slate-200 text-slate-900 p-1">Finalizar compra</button>
   </section>
-  <header class="flex text-xl bg-slate-950 shadow-slate-400 shadow-xl px-8 py-4 justify-between sticky top-0">
+  <header class="flex text-xl bg-slate-950 shadow-slate-400 shadow-xl px-8 py-4 justify-between sticky top-0 z-10">
     <img src="./assets/img/shopify (1).svg" class="h-16" alt="logo da MagazineStore">
     <div class="text-slate-200 flex gap-2 items-end mx-2">
       <button id="open-cart" class="mx-2"><i class="fa-solid fa-cart-shopping"></i></button>
